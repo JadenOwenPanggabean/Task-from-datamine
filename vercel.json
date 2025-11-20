@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "outputDirectory": "public",
+  "env": {
+    "APP_NAME": "Laravel",
+    "APP_ENV": "production",
+    "APP_KEY": "base64:MpydlMBEQcKWK+fzxIARTU8K1Z6qU8mQa1nOrJPzv0Q=",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://your-vercel-app-url.vercel.app",
+    "APP_LOCALE": "en",
+    "APP_FALLBACK_LOCALE": "en",
+    "APP_FAKER_LOCALE": "en_US",
+    "DB_CONNECTION": "sqlite",
+    "SESSION_DRIVER": "database",
+    "SESSION_LIFETIME": "120",
+    "SESSION_ENCRYPT": "false",
+    "FILESYSTEM_DISK": "local",
+    "QUEUE_CONNECTION": "database",
+    "CACHE_STORE": "database",
+    "REDIS_CLIENT": "phpredis",
+    "REDIS_HOST": "127.0.0.1",
+    "REDIS_PASSWORD": "null",
+    "REDIS_PORT": "6379",
+    "MAIL_MAILER": "log",
+    "MAIL_SCHEME": "null",
+    "MAIL_HOST": "127.0.0.1",
+    "MAIL_PORT": "2525",
+    "MAIL_USERNAME": "null",
+    "MAIL_PASSWORD": "null",
+    "MAIL_FROM_ADDRESS": "hello@example.com",
+    "MAIL_FROM_NAME": "Laravel",
+    "AWS_ACCESS_KEY_ID": "",
+    "AWS_SECRET_ACCESS_KEY": "",
+    "AWS_DEFAULT_REGION": "us-east-1",
+    "AWS_BUCKET": "",
+    "AWS_USE_PATH_STYLE_ENDPOINT": "false",
+    "OPENWEATHER_API_KEY": "3b466af04043576ca02eb377bee3174a"
+  },
+  "regions": ["all"]
+}
