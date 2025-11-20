@@ -1,0 +1,9 @@
+{
+  "build": {
+    "command": "composer install --optimize-autoloader --no-interaction",
+    "output": "public"
+  },
+  "deploy": {
+    "command": "php artisan migrate --force"
+  }
+}
